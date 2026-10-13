@@ -1,6 +1,7 @@
 import { Button } from "./components/ui/button";
 import { DirectionProvider, useDirection } from "./components/ui/direction";
 import { Select, SelectContent, SelectValue, SelectTrigger, SelectItem } from "./components/ui/select";
+import CouponBasic from "./components/uiable/coupon/coupon-basic";
 
 function App() {
   return (
@@ -24,6 +25,8 @@ function Layout() {
         <SelectContent>
           <SelectItem value="1">Option 1</SelectItem>
         </SelectContent>
+
+        <CouponBasic />
       </Select>
     </main>
   );
