@@ -1,0 +1,34 @@
+{
+    "$schema": "https://ui.shadcn.com/schema/registry.json",
+    "name": "saeed-registry",
+    "homepage": "https://uiable.com",
+    "items": [
+      {
+        "name": "button",
+        "type": "registry:ui",
+        "title": "Button",
+        "description": "A button component.",
+        "dependencies": ["@base-ui/react", "class-variance-authority", "cn"],
+        "files": [
+          {
+            "path": "src/components/ui/button.tsx",
+            "type": "registry:ui"
+          }
+        ]
+      },
+      {
+        "name": "saeed-coupon",
+        "type": "registry:block",
+        "title": "Saeed Coupon",
+        "description": "A Saeed coupon card with a discount and a copyable code.",
+        "dependencies": ["lucide-react"],
+        "registryDependencies": ["@saeed-registry/button"],
+        "files": [
+          {
+            "path": "src/components/uiable/coupon/coupon-basic.tsx",
+            "type": "registry:component"
+          }
+        ]
+      }
+    ]
+  }
